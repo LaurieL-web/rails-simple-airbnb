@@ -1,0 +1,13 @@
+<nav class="navbar bg-body-tertiary px-3 py-2">
+  <div class="container-fluid">
+    <!-- Texte à gauche -->
+    <span class="navbar-brand mb-0 h1" style="font-size: 1.25rem">Simple Airbnb</span>
+
+    <!-- Éléments alignés à droite -->
+    <form action="/flats" method="get" class="d-flex gap-2" role="search">
+      <input class="form-control" name="query" type="search" placeholder="Search" aria-label="Search" style="font-size: 1rem;">
+      <button class="btn btn-outline-success" style="font-size: 1rem;" type="submit">Search</button>
+      <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary" %>
+    </form>
+  </div>
+</nav>
